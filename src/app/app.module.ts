@@ -6,6 +6,8 @@ import { HomeComponent } from './home/home.component';
 import { DirectoryComponent } from './directory/directory.component';
 import { RouterModule, Routes } from "@angular/router";
 import {HttpClientModule} from '@angular/common/http';
+import {LoggingService} from './logging.service';
+import {DataService} from './data.service';
 
 const APP_ROUTES : Routes = [
   { path: 'directory', component: DirectoryComponent},
@@ -26,7 +28,7 @@ const APP_ROUTES : Routes = [
 
     RouterModule.forRoot(APP_ROUTES)
   ],
-  providers: [],
+  providers: [LoggingService, DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
