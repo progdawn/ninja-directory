@@ -5,9 +5,6 @@
       <div class="single-ninja">
         <span [ngStyle]="{background: ninja.belt}">{{ninja.belt}} belt</span>
         <h3>{{ninja.name}}</h3>
-          <div (click)="remove($event)" [attr.data-name]="ninja.name">delete</div>
       </div>
   </li>
 </ul>
-
-<button (click)="logIt()">Log me</button>

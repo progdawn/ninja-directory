@@ -1,16 +1,21 @@
 
 [
   {
-    "name":"Shaun",
-    "belt":"black"
-  },{
     "name": "Yoshi",
-    "belt": "black"
+    "belt": "yellow"
   },{
     "name": "Ryu",
     "belt": "red"
-  },{ 
+  },{
     "name": "Crystal",
     "belt": "purple"
+  },
+  {
+    "name":"Shaun",
+    "belt":"black"
+  },
+  {
+    "name":"Peter",
+    "belt":"green"
   }
 ]
