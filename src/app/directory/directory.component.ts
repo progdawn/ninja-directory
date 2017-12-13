@@ -21,9 +21,6 @@ export class DirectoryComponent implements OnInit {
   }
 
   ngOnInit() {
-    /*this.dataService.fetchData().subscribe(
-      (data) => this.ninjas = data
-    );*/
 
     this.fbGetData();
   }
@@ -32,5 +29,9 @@ export class DirectoryComponent implements OnInit {
     firebase.database().ref('/').on('child_added', (snapshot) => {
       this.ninjas.push(snapshot.val())
     })
+  }
+
+  fbPostData(name, belt){
+    firebase.database().ref('/').push({name: name, belt: belt});
   }
 }
